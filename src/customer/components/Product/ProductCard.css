@@ -1,0 +1,69 @@
+.productCard .textPart {
+  transition: transform 0.3s ease-out;
+}
+
+.productCard:hover .textPart {
+  transform: translateY(-1rem);
+}
+
+.productCard:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.ribbon {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  border: 3px solid #1eb5ff;
+}
+.ribbon span {
+  position: absolute;
+  display: block;
+  width: 165px;
+  padding: 5px 0;
+  background-color: #1eb5ff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wdp-ribbon {
+  display: inline-block;
+  padding: 2px 15px;
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  line-height: 24px;
+  height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+  border-radius: 0;
+  text-shadow: none;
+  font-weight: normal;
+  background-color: #1eb5ff !important;
+}
+
+.wdp-ribbon-two:before,
+.wdp-ribbon-two:before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 0;
+  border: 9px solid transparent;
+  border-width: 14px 8px;
+  border-right-color: #1eb5ff;
+}
+.wdp-ribbon-two:before {
+  border-color: #1eb5ff;
+  border-left-color: transparent !important;
+  left: -9px;
+}
